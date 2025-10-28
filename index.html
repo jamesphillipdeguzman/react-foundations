@@ -7,15 +7,25 @@
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script type="text/jsx">
       const app = document.getElementById("app");
-      function Header () {
-        return <h1>Develop. Preview. Ship.</h1>;
+
+      function CreateTitle (title) {
+        if (title) {
+          return title;
+        } else {
+          return "Default title";
+        }
+      }
+
+      function Header ({title}) {
+        console.log(title);
+        return <h1>{title ? title : "Default title"}</h1>;
       }
 
       function HomePage () {
         return (
           <div>
             {/*Nest the Header component here */}
-            <Header />
+            <Header title="React" />
           </div>
         );
       }

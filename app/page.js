@@ -1,5 +1,4 @@
-"use client";
-import { useState } from 'react';
+import LikeButton from "./like-button.js";
 
       function Header ({title}) {
         console.log(title);
@@ -9,13 +8,9 @@ import { useState } from 'react';
       export default function HomePage () {
         const names = ["React", "Vue", "Angular"];
         // console.log(names);
-        // Add a state variable for like count
-        const [likes, setLikes] = useState(0);
+        
 
-        function handleClick() {
-         // console.log("increment like count");
-         setLikes(likes + 1);
-        }
+        
         return (
           <div>
 
@@ -27,7 +22,7 @@ import { useState } from 'react';
               ))
               }
             </ul>
-            <button onClick={handleClick}>Likes ({likes})</button>
+            <LikeButton />
           </div>
         );
       }

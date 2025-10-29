@@ -22,10 +22,23 @@
       }
 
       function HomePage () {
+        const names = ["React", "Vue", "Angular"];
+        console.log(names);
+        function handleClick() {
+          console.log("increment like count");
+        }
         return (
           <div>
-            {/*Nest the Header component here */}
-            <Header title="React" />
+            
+            <Header title="Develop. Preview. Ship. " />
+            <ul>
+              {
+                names.map((name) => (
+                  <li key={name}>{name}</li>
+                ))
+              }
+            </ul>
+            <button onClick={handleClick}>Like</button>
           </div>
         );
       }

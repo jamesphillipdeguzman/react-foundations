@@ -7,6 +7,7 @@ A simple React application built with **Next.js** to explore the fundamentals of
 ## 🚀 Project Overview
 
 This project demonstrates how to:
+
 - Use **React functional components**
 - Manage state using the `useState` hook
 - Render lists dynamically with the `map()` function
@@ -14,5 +15,4 @@ This project demonstrates how to:
 
 ---
 
-## 🧱 Project Structure
-
+## 🧱 Project Structure (TBA)
